@@ -7,6 +7,7 @@ function inspect_hours {
 }
 
 function inspect_next {
+
   cron_str=$1
   cron_str="${cron_str//\'/}"
   minute=$(TZ=UTC date '+%M')
